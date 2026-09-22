@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban Shop - Ecommerce de productos urbanos">
+    <title>Urban Shop | Ecommerce</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+    <header class="header">
+        <div class="contenedor header-contenido">
+            <a href="#inicio" class="logo">URBAN<span>SHOP</span></a>
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="menu-hamburguesa" id="menu-hamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- NAVEGACIÓN -->
+            <nav class="nav" id="nav">
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#productos">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#resenas">Reseñas</a>
+                    </li>
+                    <li>
+                        <a href="#multimedia">Videos</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+
+                    <li>
+                        <button id="abrir-carrito" class="boton-carrito" type="button">🛒
+                            <span>Carrito</span>
+                            <strong id="contador-carrito">0</strong>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ==========================================
+         MAIN
+    =========================================== -->
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <p class="hero-etiqueta">NUEVA COLECCIÓN 2026</p>
+                <h1>Tu estilo.<span>Tu momento.</span></h1>
+                <p class="hero-descripcion">Descubrí productos urbanos pensados para acompañarte todos los días.</p>¨
+
+                <div class="hero-botones">
+                    <a href="#productos" class="boton">Ver Productos</a>
+                    <a href="#multimedia" class="boton boton-secundario">Conocé la marca</a>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             PRODUCTOS
+        =========================================== -->
+        <section
+            id="productos" class="productos seccion">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p>NUESTRA COLECCIÓN</p>
+                    <h2>Productos Destacados</h2>
+                    <span>Elegí tus favoritos y agregalos al carrito.</span>
+                </div>
+
+                <div class="productos-container">
+                    <!-- PRODUCTO 1 -->
+                    <article class="producto-card" data-id="1" data-nombre="Zapatillas Urban" data-precio="85000" data-imagen="./assets/img/zapatillas_urban.png">
+                        <div class="producto-imagen">
+                            <img src="./assets/img/zapatillas_urban.png" alt="Zapatillas Urban">
+                            <span class="producto-badge">DESTACADO</span>
+                        </div>
+
+                        <div class="producto-info">
+                            <p class="categoria">CALZADO </p>
+                            <h3>Zapatillas Urban</h3>
+                            <p class="descripcion">Diseño moderno y cómodo para todos los días.</p>
+
+                            <div class="producto-bottom">
+                                <strong class="precio">$85.000</strong>
+                                <button type="button" class="agregar-producto" data-id="1" data-nombre="Zapatillas Urban" data-precio="85000"
+                                    data-imagen="./assets/img/zapatillas_urban.png">Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCTO 2 -->
+                    <article class="producto-card" data-id="2" data-nombre="Mochila Classic" data-precio="55000" data-imagen="./assets/img/mochila_classic.png"> 
+                        <div class="producto-imagen">
+                            <img src="./assets/img/mochila_classic.png" alt="Mochila Classic">
+                            <span class="producto-badge">TOP</span>
+                        </div>
+
+                        <div class="producto-info">
+                            <p class="categoria">ACCESORIOS</p>
+                            <h3>Mochila Classic</h3>
+                            <p class="descripcion">Práctica, resistente y perfecta para tu rutina.</p>
+
+                            <div class="producto-bottom">
+                                <strong class="precio">$55.000</strong>
+                                <button type="button" class="agregar-producto" data-id="2" data-nombre="Mochila Classic" data-precio="55000"
+                                    data-imagen="./assets/img/mochila_classic.png">Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCTO 3 -->
+                    <article class="producto-card" data-id="3" data-nombre="Campera Street" data-precio="120000" data-imagen="./assets/img/campera_street.png">
+                        <div class="producto-imagen">
+                            <img src="./assets/img/campera_street.png" alt="Campera Street">
+                        </div>
+
+                        <div class="producto-info">
+                            <p class="categoria">INDUMENTARIA</p>
+                            <h3> Campera Street</h3>
+                            <p class="descripcion">Una campera versátil para completar tu look.</p>
+
+                            <div class="producto-bottom">
+                                <strong class="precio">$120.000</strong>
+                                <button
+                                    type="button" class="agregar-producto" data-id="3" data-nombre="Campera Street" data-precio="120000"
+                                    data-imagen="./assets/img/campera_street.png">Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCTO 4 -->
+                    <article class="producto-card" data-id="4" data-nombre="Remera Essential" data-precio="35000" data-imagen="./assets/img/remera_essential.png">
+                        <div class="producto-imagen">
+                            <img src="./assets/img/remera_essential.png" alt="Remera Essential">
+                        </div>
+
+                        <div class="producto-info">
+                            <p class="categoria">INDUMENTARIA</p>
+                            <h3>Remera Essential</h3>
+                            <p class="descripcion">Básica, cómoda y perfecta para cualquier ocasión.</p>
+
+                            <div class="producto-bottom">
+                                <strong class="precio">$35.000</strong>
+                                <button
+                                    type="button" class="agregar-producto" data-id="4" data-nombre="Remera Essential" data-precio="35000"
+                                    data-imagen="./assets/img/remera_essential.png">Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCTO 5 -->
+                    <article class="producto-card" data-id="5" data-nombre="Gorra Street" data-precio="25000" data-imagen="./assets/img/gorra_street.png">
+                        <div class="producto-imagen">
+                            <img src="./assets/img/gorra_street.png"alt="Gorra Street">
+                        </div>
+
+                        <div class="producto-info">
+                            <p class="categoria">ACCESORIOS</p>
+                            <h3>Gorra Street</h3>
+                            <p class="descripcion">El accesorio ideal para completar tu estilo urbano.</p>
+
+                            <div class="producto-bottom">
+                                <strong class="precio">$25.000</strong>
+                                <button type="button" class="agregar-producto" data-id="5" data-nombre="Gorra Street" data-precio="25000"
+                                    data-imagen="./assets/img/gorra_street.png">Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCTO 6 -->
+                    <article class="producto-card" data-id="6" data-nombre="Buzo Oversize" data-precio="65000" data-imagen="./assets/img/buzo_oversize.png">
+                        <div class="producto-imagen">
+                            <img src="./assets/img/buzo_oversize.png" alt="Buzo Oversize">
+                        </div>
+
+                        <div class="producto-info">
+                            <p class="categoria">INDUMENTARIA</p>
+                            <h3>Buzo Oversize</h3>
+                            <p class="descripcion">Comodidad y estilo en una prenda para todos los días.</p>
+
+                            <div class="producto-bottom">
+                                <strong class="precio">$65.000</strong>
+                                <button type="button" class="agregar-producto" data-id="6" data-nombre="Buzo Oversize" data-precio="65000" 
+                                data-imagen="./assets/img/buzo_oversize.png">Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             BANNER
+        =========================================== -->
+        <section class="banner">
+            <div class="contenedor banner-contenido">
+                <div>
+                    <p>ENVÍO GRATIS</p>
+                    <h2>En compras superiores a $100.000</h2>
+                </div>
+                <a href="#productos" class="boton">Comprar ahora</a>
+            </div>
+        </section>
+        <!-- ==========================================
+             VIDEOS
+        =========================================== -->
+        <section id="multimedia" class="multimedia seccion">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p>URBAN SHOP</p>
+                    <h2>Conocé nuestra marca</h2>
+                    <span>Dos videos para descubrir nuestra propuesta.
+                    </span>
+                </div>
+
+                <div class="videos-container">
+                    <article class="video-card">
+                        <div class="video-wrapper">
+                            <video controls muted loop poster="assets/img/urban_shop.png">
+                                <source src="assets/video/urban_shop.mp4" type="video/mp4">Tu navegador no puede reproducir este video.
+                            </video>
+                        </div>
+
+                        <div class="video-info">
+                            <p>Nuestro Lugar</p>
+                            <h3>Viví Urban Shop</h3>
+                            <span>Una presentación de nuestra marca y nuestro estilo.</span>
+                        </div>
+
+                    </article>
+
+                    <article class="video-card">
+                        <div class="video-wrapper">
+                            <video controls muted loop poster="assets/img/estilo_urban.png">
+                                <source src="assets/video/new_ look.mp4" type="video/mp4">Tu navegador no puede reproducir este video.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <p>Tendencias</p>
+                            <h3>Encontrá tu próximo look</h3>
+                            <span>Descubrí nuestros productos y las novedades de la tienda.</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             RESEÑAS
+        =========================================== -->
+        <section id="resenas" class="resenas seccion">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p>CLIENTES</p>
+                    <h2>Lo que dicen de nosotros</h2>
+                </div>
+
+                <div class="resenas-grid">
+                    <article class="resena">
+                        <div class="estrellas">★★★★★</div>
+                        <p>"Excelente calidad y muy buena atención. El pedido llegó rapidísimo."</p>
+                        <strong>Martina</strong>
+                    </article>
+
+                    <article class="resena">
+                        <div class="estrellas">★★★★★</div>
+                        <p>"Me encantaron los productos. La mochila es exactamente como se veía en las fotos."</p>
+                        <strong>Lucas</strong>
+
+                    </article>
+
+                    <article class="resena">
+                        <div class="estrellas">★★★★☆</div>
+                        <p>"Muy buena experiencia de compra. Seguramente vuelva a comprar."</p>
+                        <strong>Sofía</strong>
+                    </article>
+
+                    <article class="resena">
+                        <div class="estrellas">★★★★★</div>
+                        <p>"Las zapatillas son cómodas y llegaron antes de lo esperado."</p>
+                        <strong>Nicolás</strong>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             CONTACTO
+        =========================================== -->
+        <section id="contacto" class="contacto seccion">
+            <div class="contenedor">
+                <div class="contacto-contenido">
+                    <div class="contacto-info">
+                        <p>CONTACTO</p>
+                        <h2>¿Hablamos? </h2>
+                        <span>Si tenés alguna consulta sobre nuestros productos, envíos o compras, escribinos.</span>
+
+                        <div class="datos-contacto">
+                            <p>contacto@urbanshop.com</p>
+                            <p>+54 11 5555-5555</p>
+                            <p>Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+
+                    <form class="formulario" id="formulario-contacto">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="name" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tuemail@email.com" autocomplete="on" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="message" rows="6" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="boton boton-formulario" id="button">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ==========================================
+         OVERLAY CARRITO
+    =========================================== -->
+    <div id="overlay-carrito" class="overlay-carrito"></div>
+    <!-- ==========================================
+         CARRITO
+    =========================================== -->
+    <aside id="carrito" class="carrito" aria-label="Carrito de compras">
+        <div class="carrito-header">
+            <div>
+                <p>TU COMPRA</p>
+                <h2>Mi carrito</h2>
+            </div>
+            <button id="cerrar-carrito" class="cerrar-carrito" type="button" aria-label="Cerrar carrito">X</button>
+        </div>
+
+        <div id="carrito-productos" class="carrito-productos"></div>
+        <div class="carrito-footer">
+            <div class="envio-info" id="envio-info">🚚 Envío gratis desde $100.000</div>
+            <div class="carrito-resumen">
+                <div>
+                    <span>Subtotal</span>
+                    <strong id="subtotal">$0</strong>
+                </div>
+                <div>
+                    <span>Envío</span>
+                    <strong id="envio">$0</strong>
+                </div>
+                <div class="total">
+                    <span>Total</span>
+                    <strong id="total">$0</strong>
+                </div>
+            </div>
+            <button id="vaciar-carrito" class="boton-vaciar" type="button">Vaciar Carrito</button>
+            <button id="finalizar-compra" class="boton-finalizar" type="button">Finalizar compra</button>
+        </div>
+    </aside>
+    <!-- ==========================================
+         NOTIFICACIÓN
+    =========================================== -->
+    <div id="notificacion" class="notificacion" role="status" aria-live="polite"></div>
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-marca">
+                <a href="#inicio" class="logo">URBAN<span>SHOP</span></a>
+                <p>Tu estilo. Tu momento.</p>
+            </div>
+
+            <nav class="footer-nav">
+                <h3>Navegación</h3>
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#productos">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#resenas">Reseñas</a>
+                    </li>
+                    <li>
+                        <a href="#multimedia">Videos</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-copy">
+                <p>© 2026 Urban Shop</p>
+                <p>Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--sdk EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            emailjs.init('CUUK2a7uZWHbI24lx');
+
+            const btn = document.getElementById('button');
+            const myForm = document.getElementById('formulario-contacto');
+
+            myForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.innerText = 'Enviando...';
+                
+                const templateParams = {
+                    name: document.getElementById('nombre').value,
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('mensaje').value
+                };
+
+                emailjs.send('service_zkmftod', 'template_eznjuwl', templateParams)
+                    .then(() => {
+                        btn.innerText = 'Enviar mensaje';
+                        myForm.reset();
+
+                        // Alerta bonita de éxito con SweetAlert2
+                        Swal.fire({
+                            icon: 'success',
+                            title: '¡Mensaje enviado!',
+                            text: 'Gracias por escribirnos. Te responderemos muy pronto.',
+                            confirmButtonColor: '#0f172a',
+                            confirmButtonText: 'Genial'
+                        });
+                    }, (err) => {
+                        btn.innerText = 'Enviar mensaje';
+
+                        // Alerta bonita de error con SweetAlert2
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Ups, algo salió mal',
+                            text: 'No pudimos enviar tu mensaje. Por favor, intentalo de nuevo.',
+                            confirmButtonColor: '#d33',
+                            confirmButtonText: 'Entendido'
+                        });
+                    });
+            });
+        </script>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
