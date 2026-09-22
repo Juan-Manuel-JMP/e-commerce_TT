@@ -32,7 +32,7 @@
 ## 🖥️ Preview
 
 <p align="center">
-  <img src="./assets/img/hero_imagen.avif" alt="Urban Shop Preview" width="850">
+  <img src="./assets/img/hero_imagen.png" alt="Urban Shop Preview" width="850">
 </p>
 
 ---
